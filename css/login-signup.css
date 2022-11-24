@@ -1,0 +1,316 @@
+/* signin form starts from here */
+.login-form-container {
+    width: 450px;
+    margin: 50px auto;
+}
+
+.login-form-inner {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 30px;
+}
+.form-headings {
+    /* background-color: green; */
+    text-align: center;
+    padding: 0 10px;
+}
+.form-headings h3 {
+    font-size: 28px;
+}
+.form-headings p {
+    margin: 15px 0 00 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.login-form {
+    margin: 35px 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+.input-group input {
+    width: 100%;
+    padding: 13px;
+    outline: none;
+    border-radius: var(--border-radius);
+    border: 1px solid #d5d3d3;
+    font-weight: 500;
+}
+.input-group input::placeholder,
+.input-group input {
+    color: #727070;
+}
+.password-input-group {
+    position: relative;
+}
+.password-input-group input {
+    padding-right: 60px;
+}
+.double-input-group {
+    display: flex;
+    justify-content: space-between;
+}
+.double-input-group .input-group {
+    width: 48%;
+}
+.input-group label {
+    color: rgb(57, 56, 56);
+    font-size: 15px;
+    font-weight: 500;
+    user-select: none;
+}
+.toggle-password-type {
+    position: absolute;
+    top: 37px;
+    cursor: pointer;
+    font-size: 14px;
+    right: 10px;
+    font-weight: 500;
+    user-select: none;
+}
+
+.toggle-password-type:hover {
+    text-decoration: underline;
+}
+.input-group input:not([type="submit"]) {
+    margin: 3px 0 13px 0;
+}
+
+.get-help {
+    max-width: max-content;
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+}
+.input-group input[type="submit"] {
+    margin: 20px 0 0px;
+    cursor: pointer;
+    background: var(--primary);
+    border: none;
+    font-size: 16px;
+    color: white;
+}
+.password-error-message {
+    display: none;
+    background-color: rgb(249, 221, 221);
+    color: red;
+    width: max-content;
+    border: 1px solid red;
+    border-radius: var(--border-radius);
+    padding: 4px 6px;
+    right: 0;
+    position: absolute;
+    font-size: 12px;
+    margin: -3px 0 0 0;
+    z-index: 2;
+}
+.password-error-message::before {
+    content: "";
+    width: 10px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: -7px;
+    right: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
+    background-color: inherit;
+    border: 1px solid red;
+    border-right: none;
+    border-bottom: none;
+}
+.input-group.password-error-input .password-error-message {
+    display: block;
+}
+.password-error-input input {
+    outline: 1px solid red;
+    border-color: red;
+    color: red;
+}
+.password-error-input input::placeholder {
+    color: red;
+}
+.or-line-break {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.or-line-break span {
+    margin: 0 7px;
+    font-weight: 500;
+    color: #4c4c4c;
+}
+.or-line-break hr {
+    width: 20px;
+    border: none;
+    background-color: black;
+    height: 1.5px;
+    border-radius: 2px;
+}
+.login-support {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.login-support a {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+    border-radius: var(--border-radius);
+    border: 1px solid #d5d3d3;
+    color: #1a1c1e;
+    font-weight: 500;
+}
+.login-support a i {
+    font-size: 20px;
+    margin: 0 10px 0 0;
+}
+.login-support a:nth-child(2) i {
+    font-size: 23px;
+}
+.other-links {
+    font-size: 15px;
+    text-align: center;
+    color: #1a1919;
+}
+.other-links a {
+    font-weight: 600;
+    color: black;
+}
+.other-links a:hover {
+    text-decoration: underline;
+}
+.other-links {
+    justify-content: center;
+}
+.terms-policy {
+    margin: 25px 0 00 0;
+    display: flex;
+    justify-content: center;
+}
+.terms-policy span {
+    margin: 0 10px;
+}
+.terms-policy a {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+/* signin form ends here */
+
+/* signUp form starts from here */
+.signup-form-container {
+    width: 900px;
+    margin: 50px auto;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.signup-form-inner-container {
+    padding: 40px 0;
+}
+.signup-left {
+    width: 50%;
+    padding: 0 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+.form-logo img {
+    width: 100px;
+}
+/* check switch button for policy and terms & conditions */
+.policy-input-group {
+    display: flex;
+}
+#termsAndConditions {
+    /* display: none; */
+    position: absolute;
+    opacity: 0;
+    margin: 8px 0 0 7px;
+    pointer-events: none;
+}
+.policy-label {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+}
+.policy-label div {
+    user-select: none;
+}
+.policy-label div label {
+    cursor: pointer;
+}
+.policy-label a {
+    color: var(--primary);
+}
+.policy-label a:hover {
+    text-decoration: underline;
+}
+.lable-switch-btn {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    aspect-ratio: 1.5/1;
+    border-radius: 50px;
+    background-color: #bbbbbb;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+    margin: 0 10px 0 0;
+}
+
+.lable-switch-btn::before {
+    content: "";
+    background-color: white;
+    aspect-ratio: 1/1;
+    /* width: 50%; */
+    height: 100%;
+    position: absolute;
+    border-radius: inherit;
+    border: 2px solid #bbbbbb;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    transform: translateX(0px);
+    /* display: none; */
+}
+#termsAndConditions:checked ~ div .lable-switch-btn {
+    background-color: var(--primary);
+}
+#termsAndConditions:checked ~ div .lable-switch-btn::before {
+    transform: translateX(10px);
+    border-color: var(--primary);
+}
+.signup-right {
+    width: 50%;
+    background-position: center center;
+    background-size: cover;
+}
+/* signUp form ends here */
+
+/* media queries */
+@media screen and (max-width: 475px) {
+    .login-form-container {
+        width: 90%;
+    }
+    .double-input-group {
+        flex-direction: column;
+        justify-content: unset;
+    }
+    .double-input-group .input-group {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .signup-right {
+        display: none;
+    }
+    .signup-left {
+        width: 100%;
+    }
+    .signup-form-container {
+        margin: auto;
+        width: 90%;
+    }
+}
